@@ -1,7 +1,6 @@
 ﻿using Crud.Employee.Demo.Context;
 
-namespace Crud.Employee.Demo
-{
+namespace Crud.Employee.Demo;
     public class Program
     {
         public static void Main(string[] args)
@@ -10,10 +9,10 @@ namespace Crud.Employee.Demo
             
             if (context == null)
             {
-                Console.WriteLine("Falha ao inicializar o contexto.");
+                Console.WriteLine("Deu Errado");
                 return;
             }
         }
     }
-}
+
 
