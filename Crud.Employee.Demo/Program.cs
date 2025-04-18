@@ -6,11 +6,8 @@ public class Program
     public static void Main(string[] args)
     {
         var context = new ConsoleContext().GetContext();
-        
-        if (context == null)
-        {
-            Console.WriteLine("Deu Errado");
-            return;
-        }
+        var repository = new Repository.EmployeeRepository(context);
+        var app = new UI.ConsoleUserInterface(repository);
+        app.Start();
     }
 }
